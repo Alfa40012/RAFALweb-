@@ -1,0 +1,20 @@
+:root{--accent:#0f172a;--primary:#0ea5a4;--muted:#64748b}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Kufi Arabic',sans-serif;color:#0b1220;background:linear-gradient(180deg,#f8fafc 0%,#ffffff 100%)}
+.container{max-width:980px;margin:36px auto;padding:28px;background:white;border-radius:14px;box-shadow:0 8px 30px rgba(11,18,32,0.08);}
+header{display:flex;gap:20px;align-items:center}
+.avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--primary),#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+h1{margin:0;font-size:22px}
+p.lead{margin:6px 0 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:22px}
+.card{background:#fbfdff;padding:18px;border-radius:10px;border:1px solid rgba(14,20,30,0.03)}
+.section-title{font-weight:700;margin:0 0 10px}
+ul.skills{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ul.skills li{background:white;padding:8px;border-radius:8px;border:1px dashed rgba(11,18,32,0.04);font-size:14px}
+.portfolio{display:flex;flex-wrap:wrap;gap:10px}
+.proj{flex:1 1 calc(50% - 10px);min-width:140px;background:#0f172a10;padding:10px;border-radius:8px}
+.contact{display:flex;flex-direction:column;gap:8px}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;color:white;background:var(--accent);font-weight:600}
+.secondary{background:transparent;color:var(--accent);border:1px solid rgba(11,18,32,0.06)}
+footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+@media(max-width:880px){.grid{grid-template-columns:1fr}.proj{flex:1 1 100%}}
