@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Raval Web – Mahmoud</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" dir="rtl">
+    <header>
+      <div class="avatar">M</div>
+      <div>
+        <h1>Raval Web — Mahmoud</h1>
+        <p class="lead">مبرمج ومصمم جرافيك محترف — تحويل الأفكار لتطبيقات ومنتجات رقمية جذابة</p>
+      </div>
+      <div style="margin-left:auto;text-align:left">
+        <a class="btn" href="mailto:ksa7mg@gmail.com">ksa7mg@gmail.com</a>
+        <div style="margin-top:8px;color:var(--muted);font-size:13px">واتساب: <strong>01005854984</strong></div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h3 class="section-title">عنّي</h3>
+          <p>أنا محمود — أعمل في تطوير البرمجيات وتصميم الجرافيك داخل مشروع <strong>Raval Web</strong>. أقدّم حلولاً متكاملة (تطبيقات — مواقع — واجهات مستخدم — هويات بصرية).</p>
+        </section>
+
+        <section class="card" style="margin-top:12px">
+          <h3 class="section-title">أعمال بارزة / Portfolio</h3>
+          <div class="portfolio">
+            <div class="proj"><strong>مشروع 1</strong><div>شعار + هوية بصرية</div></div>
+            <div class="proj"><strong>مشروع 2</strong><div>تطبيق أندرويد</div></div>
+            <div class="proj"><strong>مشروع 3</strong><div>موقع شركة</div></div>
+            <div class="proj"><strong>مشروع 4</strong><div>حملة سوشيال ميديا</div></div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:12px">
+          <h3 class="section-title">الخدمات</h3>
+          <ul class="skills">
+            <li>تطوير تطبيقات أندرويد (Java / Kotlin)</li>
+            <li>Python – سكربتات وتطبيقات</li>
+            <li>مواقع ويب (HTML/CSS/JS)</li>
+            <li>ربط قواعد بيانات & APIs</li>
+            <li>تصميم شعارات وهوية بصرية</li>
+            <li>بوستات وإعلانات للسوشيال ميديا</li>
+          </ul>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3 class="section-title">تواصل سريع</h3>
+          <div class="contact">
+            <a class="btn" href="mailto:ksa7mg@gmail.com">راسلني عبر الإيميل</a>
+            <a class="btn secondary" href="https://wa.me/201005854984" target="_blank">افتح محادثة واتساب</a>
+            <a class="btn secondary" href="#" onclick="copyPhone()">نسخ رقم الهاتف</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © <strong>Raval Web</strong> — Mahmoud · Email: ksa7mg@gmail.com · WhatsApp: 01005854984
+    </footer>
+  </div>
+
+  <script>
+    function copyPhone(){
+      navigator.clipboard && navigator.clipboard.writeText('01005854984')
+        .then(()=>alert('تم نسخ رقم الهاتف'))
+        .catch(()=>prompt('انسخ رقم الهاتف يدوياً:', '01005854984'))
+    }
+  </script>
+</body>
+</html>
